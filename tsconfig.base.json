@@ -1,30 +1,28 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
     "declaration": false,
-    "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedParameters": true,
+    "removeComments": false,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
+    "noImplicitOverride": false,
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es2017", "dom"],
     "baseUrl": ".",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
     "paths": {
-      "@tinybase-test/tinybase-lib": [
-        "packages/tinybase-lib/src/index.ts"
-      ]
+      "@tinybase-test/tinybase-lib": ["packages/tinybase-lib/src/index.ts"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
